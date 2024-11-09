@@ -1,0 +1,165 @@
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar {
+  background-color: #deefe7;
+  border: 1px solid #000;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 100;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbarLogo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbarSearch {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.navbarSearch input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.navbarToggle {
+  background-color: #deefe7;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size:2em;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbarMenu {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0 3%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #11b367;
+  max-width: 320px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  height: 100vh;
+}
+
+.navbarMenuIsOpen {
+  display: flex;
+}
+
+.navbarItem {
+  margin-top: 30px;
+}
+
+.navbarColor {
+  color: #fff;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.userMenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.userIcon {
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.userMenuIcon {
+  font-size: 20px;
+  color: #000;
+}
+
+.userDropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  min-width: 140px;
+}
+
+.userDropdownIsOpen {
+  display: block;
+}
+
+.userDropdown li {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.userDropdown li a,
+.userDropdown li button {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.userDropdown li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.userDropdown li button:hover,
+.userDropdown li a:hover {
+  background-color: #f0f0f0;
+}
