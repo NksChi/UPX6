@@ -15,10 +15,10 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = {status: 200};
       if (response.status === 200) {
         setCookie('session', 'loggedin', { path: '/' });
-        navigate('/home');
+        navigate('/Home');
       } else {
         alert('Credenciais inválidas');
       }

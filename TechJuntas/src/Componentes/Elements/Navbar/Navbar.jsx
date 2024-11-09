@@ -32,22 +32,22 @@ const Navbar = ({ handleLogout }) => {
           <ul className={`${styles.navbarMenu} ${isMenuOpen ? styles.navbarMenuIsOpen : ''}`}>
             <li className={styles.navbarItem}>
               <NavLink className={styles.navbarColor} to="/home" onClick={handleMenuToggle}>
-                Home
+                Sobre nós
               </NavLink>
             </li>
             <li className={styles.navbarItem}>
               <NavLink className={styles.navbarColor} to="/cadastro" onClick={handleMenuToggle}>
-                Cadastrar Equipamentos
+                Artigos e Depoimentos
               </NavLink>
             </li>
             <li className={styles.navbarItem}>
               <NavLink className={styles.navbarColor} to="/equipamentos" onClick={handleMenuToggle}>
-                Equipamentos
+                Vagas Afirmativas
               </NavLink>
             </li>
             <li className={styles.navbarItem}>
               <NavLink className={styles.navbarColor} to="/descarte" onClick={handleMenuToggle}>
-                Descarte
+                Cursos
               </NavLink>
             </li>
           </ul>
