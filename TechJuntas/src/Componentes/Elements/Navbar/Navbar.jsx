@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoClose, IoMenu, IoChevronDown, IoSearch } from 'react-icons/io5';
-import RecycleTechLogo from '../../../assets/recycle_tech.png';
+import TechJuntas from '../../../assets/TechJuntas.png';
 import UserIcon from '../../../assets/User.png';
 import styles from './Navbar.module.css';
 
 const Navbar = ({ handleLogout }) => {
-  
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
@@ -23,7 +22,7 @@ const Navbar = ({ handleLogout }) => {
       <div className={styles.navbarContainer}>
         <div className={styles.leftSection}>
           <NavLink to="/" className={styles.navbarLogo}>
-            <img src={RecycleTechLogo} alt="Logo" />
+            <img src={TechJuntas} alt="Logo" />
           </NavLink>
 
           <button className={styles.navbarToggle} onClick={handleMenuToggle}>
@@ -36,7 +35,7 @@ const Navbar = ({ handleLogout }) => {
               </NavLink>
             </li>
             <li className={styles.navbarItem}>
-              <NavLink className={styles.navbarColor} to="/cadastro" onClick={handleMenuToggle}>
+              <NavLink className={styles.navbarColor} to="/artigos" onClick={handleMenuToggle}>
                 Artigos e Depoimentos
               </NavLink>
             </li>

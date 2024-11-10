@@ -1,14 +1,14 @@
-// src/PrivateRoute.js
-import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 
-const PrivateRoute = ({ component: Component }) => {
+const PrivateRoute = ({ component }) => {
   const [cookies] = useCookies(['session']);
 
-  return (
-    cookies.session ? Component : <Navigate to="/login" />
-  );
-}
+  if (!cookies.session) {
+    return <Navigate to="/login" />;
+  }
+
+  return component;
+};
 
 export default PrivateRoute;

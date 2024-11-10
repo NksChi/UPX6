@@ -3,15 +3,15 @@ import { useCookies } from 'react-cookie';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Elements/Navbar/Navbar';
 import Server from '../../assets/Server_Icon.png';
-import './Cadastro.css';
+import './ArtigosDepoimentos.css';
 
-const Cadastro = () => {
+const ArtigosDepoimentos = () => {
   const [cookies, , removeCookie] = useCookies(['session']);
   const navigate = useNavigate();
 
   const handleLogout = () => {
     removeCookie('session', { path: '/' });
-    navigate('/cadastro');
+    navigate('/artigos');
   };
 
   const [nomeProduto, setNomeProduto] = useState('');
@@ -157,4 +157,4 @@ const Cadastro = () => {
   );
 };
 
-export default Cadastro;
+export default ArtigosDepoimentos;

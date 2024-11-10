@@ -3,8 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import './LoginPage.css';
-import newtonPaivaLogo from '../../assets/newton_paiva_logo.png';
-import recycleTech from '../../assets/recycle_tech.png';
+import techJuntasLogo from '../../assets/TechJuntas.png';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -15,7 +14,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = {status: 200};
+      const response = { status: 200 };
       if (response.status === 200) {
         setCookie('session', 'loggedin', { path: '/' });
         navigate('/Home');
@@ -29,16 +28,15 @@ const Login = () => {
 
   return (
     <div className="login-page">
-      <img src={newtonPaivaLogo} alt="Top" className="top-image" />
+      <img src={techJuntasLogo} alt="TechJuntas Logo" className="top-image" />
       <div className="login-container">
         <div className="login-header">
-          <img src={recycleTech} alt="Logo" />
           <h1>
             <span className="tech">Tech</span>
-            <span className="lifecycle">LifeCycle</span>
+            <span className="juntas">Juntas</span>
           </h1>
         </div>
-        <h2>Acesse sua</h2>
+        <h2>Entre no TechJuntas</h2>
         <form onSubmit={handleLogin}>
           <div className="login-input-group">
             <label htmlFor="username">Login:</label>
@@ -67,13 +65,12 @@ const Login = () => {
         </form>
       </div>
       <div className="footer">
-        &copy; {new Date().getFullYear()} TechLifeCycle. Todos os direitos reservados. 
-        <span className='upx'> 
-          / UPX5 - GRUPO 8
-        </span>
+        &copy; {new Date().getFullYear()} TechJuntas. Todos os direitos reservados. 
+        <div></div>
+        <span className="upx">UPX6 - GRUPO 10</span>
       </div>
     </div>
   );
-}
+};
 
 export default Login;
