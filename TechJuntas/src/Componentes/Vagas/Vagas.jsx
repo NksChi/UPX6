@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Elements/Navbar/Navbar';
-import './Historico.css';
+import './Vagas.css';
 
-const Historico = () => {
+const Vagas = () => {
   const [cookies, setCookie, removeCookie] = useCookies(['session']);
   const navigate = useNavigate();
 

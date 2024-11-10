@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 
-import Historico from './Componentes/Historico/Historico';
+import Vagas from './Componentes/Vagas/Vagas';
 import ArtigosDepoimentos from './Componentes/ArtigosDepoimentos/ArtigosDepoimentos';
 import Login from './Componentes/Login/Login';
 import SobreNos from './Componentes/SobreNos/SobreNos';
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<PrivateRoute component={<SobreNos />} />} />
         <Route path="/artigos" element={<PrivateRoute component={<ArtigosDepoimentos />} />} />
-        <Route path="/historico" element={<PrivateRoute component={<Historico />} />} />
+        <Route path="/vagas" element={<PrivateRoute component={<Vagas />} />} />
         <Route path="/descarte" element={<PrivateRoute component={<Descarte />} />} />
       </Routes>
     </Router>
