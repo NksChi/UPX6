@@ -1,81 +1,82 @@
 .container {
-  margin-top: 70px;
-  margin-left: 16%;
+  padding: 40px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 100vh;
+}
+
+.artigos, .depoimentos {
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #2882c3; 
+  border-radius: 10px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  height: 100vh;
+  flex: 1 1 calc(25% - 20px);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-logout {
-  margin-bottom: 20px;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.btn-atualizar {
-  margin-top: 20px;
-  border-radius: 100px;
-}
-
-.artigos {
-  margin-top: 20px;
-}
-
-.artigo {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.artigo h3 {
+.card h3 {
   font-size: 1.25rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.artigo button {
-  background-color: #11b367;
-  color: white;
+.card button {
+  background-color: #f0f2f5;
+  color: #2A2F3C;
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.depoimentos {
-  margin-top: 30px;
+.card button:hover {
+  background-color: #e1e4e8;
 }
 
-.depoimento {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.depoimento p {
-  font-style: italic;
-  font-size: 1rem;
-}
-
-.depoimento footer {
-  text-align: right;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.footer-text {
+.footer-sobre {
   text-align: center;
-  margin-top: 40%;
+  margin-top: 20px;
   color: #000;
   font-size: 14px;
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-top: 1px solid #ddd;
 }
 
-footer {
-  margin-top: 20px;
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

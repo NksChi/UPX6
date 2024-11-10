@@ -46,7 +46,7 @@
 }
 
 .navbarToggle {
-  background-color: #deefe7 ;
+  background-color: #deefe7;
   border: none;
   cursor: pointer;
   font-size: 24px;
@@ -55,7 +55,12 @@
   color: #000;
   padding: 10px 20px;
   cursor: pointer;
-  font-size:2em;
+  font-size: 2em;
+}
+
+.navbarToggle:hover {
+  background-color: #2882c3;
+  color: white;
 }
 
 a{
