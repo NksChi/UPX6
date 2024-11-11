@@ -6,7 +6,7 @@ import ArtigosDepoimentos from './Componentes/ArtigosDepoimentos/ArtigosDepoimen
 import Login from './Componentes/Login/Login';
 import SobreNos from './Componentes/SobreNos/SobreNos';
 import Vagas from './Componentes/Vagas/Vagas';
-import Descarte from './Componentes/Descarte/Descarte';
+import Cursos from './Componentes/Cursos/Cursos';
 import PrivateRoute from './PrivateRoute';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/home" element={<PrivateRoute component={<SobreNos />} />} />
         <Route path="/artigos" element={<PrivateRoute component={<ArtigosDepoimentos />} />} />
         <Route path="/vagas" element={<PrivateRoute component={<Vagas />} />} />
-        <Route path="/descarte" element={<PrivateRoute component={<Descarte />} />} />
+        <Route path="/cursos" element={<PrivateRoute component={<Cursos />} />} />
       </Routes>
     </Router>
   );

@@ -89,35 +89,29 @@ const ArtigosDepoimentos = () => {
             {articles.map((article) => (
               <div key={article.title} className="card">
                 <h3>{article.title}</h3>
-                <p classname>{article.content}</p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer">
-                  <button>Leia mais</button>
-                </a>
+                <p className="text">{article.content}</p>
+                <button onClick={() => window.open(article.link, '_blank')}>Leia mais</button>
               </div>
             ))}
           </div>
         </div>
-
         <div className="depoimentos">
           <h2>Depoimentos</h2>
           <div className="card-container">
             {testimonials.map((testimonial) => (
               <div key={testimonial.title} className="card">
                 <h3>{testimonial.title}</h3>
-                <p>{testimonial.content}</p>
-                <a href={testimonial.link} target="_blank" rel="noopener noreferrer">
-                  <button>Leia mais</button>
-                </a>
+                <p className="text">{testimonial.content}</p>
+                <button onClick={() => window.open(testimonial.link, '_blank')}>Leia mais</button>
               </div>
             ))}
           </div>
         </div>
-      </div>
-
+      </div>        
       <div className="footer-sobre">
         Desenvolvido pelo grupo 10 da turma de UPX6 2024.2 <br />
         Protegido por Copyright
-      </div>
+        </div>
     </div>
   );
 };

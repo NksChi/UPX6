@@ -45,7 +45,7 @@ const Navbar = ({ handleLogout }) => {
               </NavLink>
             </li>
             <li className={styles.navbarItem}>
-              <NavLink className={styles.navbarColor} to="/descarte" onClick={handleMenuToggle}>
+              <NavLink className={styles.navbarColor} to="/cursos" onClick={handleMenuToggle}>
                 Cursos
               </NavLink>
             </li>
