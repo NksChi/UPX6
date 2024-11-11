@@ -74,7 +74,7 @@
 }
 
 .login-header .tech {
-  color: #11b367;
+  color: #2882c3;
 }
 
 .login-header .juntas {
@@ -105,7 +105,7 @@ button[type="submit"] {
   padding: 12px;
   border: none;
   border-radius: 20px;
-  background-color: #11b367;
+  background-color: #0072bc;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -113,7 +113,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0f9a55;
+  background-color: #2882c3;
 }
 
 .forgot-password-container {
@@ -122,7 +122,7 @@ button[type="submit"]:hover {
 }
 
 .login-forgot-password-link {
-  color: #11b367;
+  color: #005a99;
   cursor: pointer;
 }
 

@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 
-import Vagas from './Componentes/Vagas/Vagas';
 import ArtigosDepoimentos from './Componentes/ArtigosDepoimentos/ArtigosDepoimentos';
 import Login from './Componentes/Login/Login';
 import SobreNos from './Componentes/SobreNos/SobreNos';
+import Vagas from './Componentes/Vagas/Vagas';
 import Descarte from './Componentes/Descarte/Descarte';
 import PrivateRoute from './PrivateRoute';
 

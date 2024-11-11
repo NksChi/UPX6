@@ -1,81 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
 .container {
-  margin-top: 70px;
-  margin-left: 16%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  height: 100vh;
-}
-
-.btn-logout {
-  margin-bottom: 20px;
-}
-
-.btn-atualizar {
-  margin-top: 20px;
-  border-radius: 100px;
-}
-
-.artigos {
-  margin-top: 20px;
-}
-
-.artigo {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.artigo h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.artigo button {
-  background-color: #11b367;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.depoimentos {
-  margin-top: 30px;
-}
-
-.depoimento {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.depoimento p {
-  font-style: italic;
-  font-size: 1rem;
-}
-
-.depoimento footer {
-  text-align: right;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.footer-text {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 40px 20px;
   text-align: center;
-  margin-top: 40%;
-  color: #000;
-  font-size: 14px;
 }
 
-footer {
-  margin-top: 20px;
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #2882c3;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #f4f4f4;
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+}
+
+.empresa {
+  font-size: 0.9em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 0.95em;
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.apply-btn {
+  background-color: #0072bc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #005a99;
+}
+
+.footer-sobre {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 0.9em;
+  text-align: center;
 }
