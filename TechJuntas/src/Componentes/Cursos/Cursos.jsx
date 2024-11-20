@@ -38,21 +38,18 @@ const Cursos = () => {
         <h1 className="mt-4">Cursos de Programação</h1>
         <div className="row">
           {videos.map((video, index) => (
-            <div className="col-md-4" key={index}>
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">{video.title}</h5>
-                  <iframe 
-                    width="100%" 
-                    height="200" 
-                    src={video.url} 
-                    title={video.title} 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                  ></iframe>
-                  <p className="card-text">{video.description}</p>
-                </div>
+            <div key={index} className="card">
+              <div className="card-content">
+                <h3 className="card-title">{video.title}</h3>
+                <iframe
+                  className="video"
+                  src={video.url}
+                  title={video.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className="card-description">{video.description}</p>
               </div>
             </div>
           ))}
